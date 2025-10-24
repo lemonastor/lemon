@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ليمون استور للبيع الاجهزه الكهربائيه في السودان">
+
+    <!-- اسم التطبيق -->
+    <meta name="apple-mobile-web-app-title" content="ليمون استور">
+    <meta name="ليمون استور" content="ليمون استور">
+
+    <!-- تحديد أيقونة الموقع -->
+    <link rel="icon" href="lo/IMG_٢٠٢٥١٠٢٤_٢٢٣٧٠١_(192_x_192_pixel).png">
+    
+    <!-- للـ Android (Web App) -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="lo/IMG_٢٠٢٥١٠٢٤_٢٢٣٧٠١_(192_x_192_pixel).png">
+    <link rel="icon" sizes="192x192" href="lo/IMG_٢٠٢٥١٠٢٤_٢٢٣٧٠١_(192_x_192_pixel).png">
+
+    <!-- للـ iOS -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- إعدادات الشاشة -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ليمون استور</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- إضافة مكتبة أيقونات Font Awesome لأيقونة السلة -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    
+</head>
+<body>
+    <!-- الهيدر -->
+    <header>
+        <div class="container header-content">
+            <div class="logo-section">
+                <div class="logo">
+                    <i class="fas fa-bolt logo-img"></i>
+                </div>
+                <div class="store-name">
+                    <h1>ليمون استور للأجهزة الكهربائية</h1>
+                    <p>متجر الأجهزة الكهربائية</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active" data-section="home">الرئيسية</a></li>
+                    <li><a href="#" data-section="all-products"></a></li>
+                    <li><a href="#" data-section="offers">عروض خاصة</a></li>
+                    <li><a href="#" data-section="contact"></a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="ابحث عن منتج...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- البانر الرئيسي -->
+    <section class="banner" id="home-section">
+        <div class="container">
+            <h1>أفضل الأجهزة الكهربائية بأسعار منافسة</h1>
+            <p>اكتشف أحدث الأجهزة الكهربائية المنزلية بجودة عالية وأسعار تنافسية مع ضمان شامل</p>
+            <a href="#featured-products" class="btn">تسوق الآن</a>
+        </div>
+    </section>
+
+    <!-- الأقسام -->
+    <section class="container" id="categories-section">
+        <h2 class="section-title">أقسام المتجر</h2>
+        <div class="categories" id="categories-container">
+            <!-- سيتم إضافة الأقسام ديناميكيًا باستخدام JavaScript -->
+        </div>
+    </section>
+
+    <!-- المنتجات المميزة -->
+    <section class="container" id="featured-products">
+        <h2 class="section-title">المنتجات المميزة</h2>
+        <div class="products" id="featured-products-container">
+            <!-- سيتم إضافة المنتجات ديناميكيًا باستخدام JavaScript -->
+        </div>
+    </section>
+
+    <!-- قسم المنتجات حسب التصنيف -->
+    <section class="container" id="category-products-section" style="display: none;">
+        <div class="section-header">
+            <h2 class="section-title" id="category-title">منتجات القسم</h2>
+            <button class="btn back-btn" id="back-to-home">
+                <i class="fas fa-arrow-right"></i> العودة إلى الرئيسية
+            </button>
+        </div>
+        <div class="products" id="category-products">
+            <!-- سيتم إضافة منتجات القسم ديناميكيًا -->
+        </div>
+    </section>
+
+    <!-- قسم جميع المنتجات -->
+    <section class="container" id="all-products-section" style="display: none;">
+        <div class="section-header">
+            <h2 class="section-title">جميع المنتجات</h2>
+            <button class="btn back-btn" id="back-to-home-2">
+                <i class="fas fa-arrow-right"></i> العودة إلى الرئيسية
+            </button>
+        </div>
+        <div class="products" id="all-products-container">
+            <!-- سيتم إضافة جميع المنتجات ديناميكيًا -->
+        </div>
+    </section>
+
+    <!-- قسم العروض الخاصة -->
+    <section class="container" id="offers-section" style="display: none;">
+        <div class="section-header">
+            <h2 class="section-title">عروض خاصة</h2>
+            <button class="btn back-btn" id="back-to-home-3">
+                <i class="fas fa-arrow-right"></i> العودة إلى الرئيسية
+            </button>
+        </div>
+        <div class="products" id="offers-container">
+            <!-- سيتم إضافة المنتجات ذات العروض ديناميكيًا -->
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section class="container" id="contact-section" style="display: none;">
+        <div class="section-header">
+            <h2 class="section-title">اتصل بنا</h2>
+            <button class="btn back-btn" id="back-to-home-4">
+                <i class="fas fa-arrow-right"></i> العودة إلى الرئيسية
+            </button>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>الهاتف</h3>
+                        <p>+249119479189</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>البريد الإلكتروني</h3>
+                        <p>loaymohammed0119@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>العنوان</h3>
+                        <p>سوق امدرمان المحطه الاوسطه</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>ساعات العمل</h3>
+                        <p>السبت - الخميس: 9 صباحاً - 5 مساءً</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>أرسل رسالة</h3>
+                <form id="contact-form">
+                    <input type="text" placeholder="الاسم الكامل" required>
+                    <input type="email" placeholder="البريد الإلكتروني" required>
+                    <input type="tel" placeholder="رقم الهاتف">
+                    <textarea placeholder="رسالتك..." rows="5" required></textarea>
+                    <button type="submit" class="btn">إرسال الرسالة</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-bolt"></i>
+                        <h3>ليمون استور</h3>
+                    </div>
+                    <p>متجر الأجهزة الكهربائية يوفر لك أحدث الأجهزة الكهربائية المنزلية بجودة عالية وأسعار تنافسية مع خدمة التوصيل المجاني.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#" data-section="home">الرئيسية</a></li>
+                        <li><a href="#" data-section="all-products">جميع المنتجات</a></li>
+                        <li><a href="#" data-section="offers">عروض خاصة</a></li>
+                        <li><a href="https://chat.whatsapp.com/DOQuEXOrgK435KpLgtCngq?mode=wwt" data-section="contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>خدمة العملاء</h3>
+                    <ul>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">سياسة الإرجاع</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>القائمة البريدية</h3>
+                    <p>اشترك في نشرتنا البريدية للحصول على آخر العروض</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="بريدك الإلكتروني" required>
+                        <button type="submit" class="btn">اشتراك</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; 2025 ليمون ستور</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- الشريط الجانبي للعربة -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2>عربة التسوق</h2>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <!-- سيتم إضافة عناصر العربة ديناميكيًا -->
+        </div>
+        <div class="cart-total">الإجمالي: <span id="cart-total-price">0</span> جنيه</div>
+        <button class="checkout-btn whatsapp-btn" id="whatsapp-checkout">
+            <i class="fab fa-whatsapp"></i> إتمام الشراء عبر واتساب
+        </button>
+        <button class="checkout-btn clear-cart-btn" id="clear-cart">
+            <i class="fas fa-trash"></i> تفريغ العربة
+        </button>
+    </div>
+
+    <!-- زر عرض العربة -->
+    <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <div class="cart-count">0</div>
+    </div>
+
+    <!-- نافذة تأكيد الطلب -->
+    <div class="confirmation-modal" id="confirmation-modal">
+        <div class="modal-content">
+            <h3>تأكيد الطلب</h3>
+            <p>سيتم فتح واتساب لإرسال طلبك. تأكد من اتصالك بالإنترنت.</p>
+            <div class="modal-actions">
+                <button class="btn confirm-btn" id="confirm-order">متابعة</button>
+                <button class="btn cancel-btn" id="cancel-order">إلغاء</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
