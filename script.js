@@ -1,3 +1,15 @@
+if (window.matchMedia('(display-mode: standalone)').matches) {
+    // الموقع يُعرض كـ "تطبيق ويب"
+}
+ else {
+    // الموقع يُعرض في المتصفح
+    window.addEventListener('load', function() {
+        if (!window.navigator.standalone) {
+            // يمكن إضافة إشعار للمستخدم بتثبيت التطبيق
+        }
+    });
+}
+
 // بيانات الأقسام
 const categories = [
     { id: 1, name: "ثلاجات", icon: "❄️" },
