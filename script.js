@@ -193,7 +193,7 @@ const products = [
         category: "ثلاجات",
         price: 1050,
         image: "img/IMG_٢٠٢٥١١٠٧_٢١١٤٠٥_(840_x_840_pixel).jpg",
-        description: "ثلاجة كراون CROWN 13قدم بابين يابنية اصلية ضمان5 سنوات",
+        description: "ثلاجة كراون CROWN 10قدم بابين يابنية اصلية ضمان5 سنوات",
         offer: false
     },
 
