@@ -64,7 +64,7 @@ const products = [
         id: 5,
         name: "شاشة دانسات 50 بوصه",
         category: "شاشات",
-        price: 1350,
+        price: 1400,
         image: "img/IMG_٢٠٢٥١٠١٦_١٨٠٠٢٥_(1200_x_1200_pixel).png",
         description: "شاشة دانسات 50 بوصه ذكية سعوديه اصليه",
         offer: false
@@ -73,7 +73,7 @@ const products = [
         id: 6,
         name: "مروحة نسمة ستاند",
         category: "مراوح",
-        price: 280,
+        price: 290,
         image: "img/1755802395196.jpg",
         description: "مروحة نسمة مقاس 24 ستاند",
         offer: true
@@ -83,7 +83,7 @@ const products = [
         id: 8,
         name: "مكيف اسبلت lG 18 وحدة انفيرتر",
        category: "مكيفات",
-        price: 3800,
+        price: 3300,
         image: "img/IMG_٢٠٢٥٠٩٢٦_١٨٢٢٠٧_(600_x_600_pixel).jpg",
         description: "مكيف اسبلت lg 18وحدة انفيرتر الاصلي تايلندي BB",
         offer: false
@@ -108,8 +108,37 @@ const products = [
     },
 
 
+     {
+        id: 8,
+        name: "مكيف اسبلت lG 24 وحدة انفيرتر",
+       category: "مكيفات",
+        price: 4500,
+        image: "img/IMG_٢٠٢٥٠٩٢٦_١٨٢٢٠٧_(600_x_600_pixel).jpg",
+        description: "مكيف اسبلت lg 24وحدة انفيرتر الاصلي تايلندي ",
+        offer: false
+     },
     
-    
+      {
+        id: 8,
+        name: "اسبلت ميديا 18 وحدة انفيرتر",
+       category: "مكيفات",
+        price: 2300,
+        image: "img/IMG_٢٠٢٥١١٠٧_١٦١٨١٦_(1080_x_1469_pixel).jpg",
+        description: "اسبلت ميديا اصلي",
+        offer: false
+      },
+
+      {
+        id: 8,
+        name: "اسبلت نسمة tcl 18 وحدة انفيرتر",
+       category: "مكيفات",
+        price: 2500,
+        image: "img/IMG_٢٠٢٥١١٠٧_١٦١٨٢٨_(1080_x_591_pixel).jpg",
+        description: "اسبلت نسمة اصلي",
+        offer: false
+      },
+
+      
 
     {
         id: 15,
@@ -154,6 +183,16 @@ const products = [
         category: "ثلاجات",
         price: 1550,
         image: "img/IMG_٢٠٢٥١٠٠٥_٢٣١٠٢٤_(2008_x_3000_pixel).jpg",
+        description: "ثلاجة كراون CROWN 13قدم بابين يابنية اصلية ضمان5 سنوات",
+        offer: false
+    },
+    
+ {
+        id: 21,
+        name: "ثلاجة كراون 10قدم",
+        category: "ثلاجات",
+        price: 1050,
+        image: "img/IMG_٢٠٢٥١١٠٧_٢١١٤٠٥_(840_x_840_pixel).jpg",
         description: "ثلاجة كراون CROWN 13قدم بابين يابنية اصلية ضمان5 سنوات",
         offer: false
     },
@@ -350,6 +389,52 @@ const products = [
 
 {
         id: 1,
+        name: "شاشه LG 65بوصه",
+        category: "شاشات",
+        price: 4800,
+        image: "img/IMG_٢٠٢٥١١٠٧_١٦٣٢٠٠_(700_x_700_pixel).jpg",
+        description: "شاشه ال جي ذكيه دقه عاليه جدا",
+        offer: false
+    },
+
+{
+        id: 1,
+        name: "شاشه LG 55 بوصه",
+        category: "شاشات",
+        price: 3200,
+        image: "img/IMG_٢٠٢٥١١٠٧_١٦٢٩٣٦_(1000_x_1000_pixel).jpg",
+        description: "شاشه ال جي ذكية",
+        offer: false
+    },
+{
+        id: 1,
+        name: "شاشه LG 50 بوصه",
+        category: "شاشات",
+        price: 2600,
+        image: "img/IMG_٢٠٢٥١١٠٧_١٦٢٩٥٠_(680_x_451_pixel).jpg",
+        description: "شاشة ال جي ذكيه عالية الدقه",
+        offer: false
+    },
+{
+        id: 1,
+        name: "شاشة LG 43 بوصه",
+        category: "شاشات",
+        price: 1400,
+        image: "img/IMG_٢٠٢٥١١٠٧_١٦٣٠٠٤_(1100_x_730_pixel).jpg",
+        description: "شاشه ال جي ذكية عالية الدقه",
+        offer: false
+    },
+{
+        id: 1,
+        name: "شاشه LG 32 بوصه",
+        category: "شاشات",
+        price: 950,
+        image: "img/IMG_٢٠٢٥١١٠٧_١٦٣٠١٥_(500_x_500_pixel).jpg",
+        description: "",
+        offer: false
+    },
+{
+        id: 1,
         name: "",
         category: "",
         price: 2500,
@@ -365,7 +450,7 @@ let cart = [];
 
 // إعدادات المتجر
 const storeSettings = {
-    whatsappNumber: '249119479189', // استبدل برقم واتساب المتجر الفعلي
+    whatsappNumber: '249923878900', // استبدل برقم واتساب المتجر الفعلي
     storeName: 'ليمون استور'
 };
 
